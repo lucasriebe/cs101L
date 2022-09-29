@@ -77,7 +77,7 @@ def verify_check_digit(id):
         return False, 'The seventh character must be 1 2 3 or 4'
 #check to see if last 3 values are digits 0-9
     for i in range(7,10):
-        if id[i].isdigit == False:
+        if id[i].isdigit() == False:
             return False, f'The last 3 characters must be 0-9, the invalid character is at {i} and is {id[i]}'
 #verify check digit
     x = get_check_digit(id)
